@@ -3,7 +3,8 @@ import datetime
 
 try:
     a = int(input('Введите число:'))
-    print(math.sqrt(a))
+    if a>0:
+        print(math.sqrt(a))
 except ValueError:
     print("Введите число, а не строку")
 print(datetime.datetime.now())
@@ -24,4 +25,5 @@ try:
     c,d = int(input()),int(input())
     print(package_1.m2.urav_2(c,d))
 except ValueError:
+
     print('Введите числа')
